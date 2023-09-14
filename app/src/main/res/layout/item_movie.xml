@@ -40,41 +40,14 @@
                 android:paddingStart="10dp"
                 android:paddingEnd="10dp"
                 android:text="@{movie.title}"
+                android:maxLines="3"
                 tools:text="txt_title Movie"
                 android:textSize="16sp"
                 android:textColor="@color/black"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/image"
                 />
-            <TextView
-                android:id="@+id/txt_language_movie"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:text="@{movie.originalLanguage}"
-                tools:text="En"
-                android:textStyle="bold"
-                app:layout_constraintTop_toBottomOf="@+id/image"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                />
 
-            <TextView
-                android:id="@+id/txt_release_date_movie"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:text="@{format.getStringDate(movie.releaseDate)}"
-                tools:text="dd/MM/YYYY"
-                android:textStyle="bold"
-                app:layout_constraintTop_toBottomOf="@+id/txt_title"
-                app:layout_constraintEnd_toStartOf="@id/txt_language_movie"
-                app:layout_constraintStart_toStartOf="parent"
-                />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 

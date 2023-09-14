@@ -11,6 +11,7 @@ import com.example.moviealmanacv2.ui.fragments.HomeFragment
 import com.example.moviealmanacv2.ui.fragments.HomeFragment.Companion.DETAIL_MOVIE
 import com.example.moviealmanacv2.utils.ConstantsMain.Companion.TMDb_BACKDROP_PATH
 import com.example.moviealmanacv2.utils.ConstantsMain.Companion.TMDb_POSTER_PATH
+import com.example.moviealmanacv2.utils.getFormatStringDate
 import org.koin.dsl.module
 
 val detailMovieModule = module {
@@ -62,11 +63,14 @@ class DetailActivity : AppCompatActivity() {
         val convertPopularity =dataDetail.popularity.toString()
         val valRating = dataDetail.voteAverage.div(2.0)
         val valForRateBar= valRating.toFloat()
+        val valReleaseDate = dataDetail.releaseDate.let{ it?.let { it1 -> getFormatStringDate(it1) } }
 
         binding.detailMovieMain.txtTitleMovieDetail.text= dataDetail.title
         binding.detailMovieMain.txtContentOverview.text= dataDetail.overview
         binding.detailMovieMain.txtVoteAverageDetail.text = convertVoteAvg
         binding.detailMovieMain.txtPopularity.text = convertPopularity
+        binding.detailMovieMain.txtReleaseDate.text= valReleaseDate
+
 
         binding.detailMovieMain.ratingBar.rating = valForRateBar
 

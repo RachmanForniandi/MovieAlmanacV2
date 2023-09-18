@@ -47,6 +47,7 @@ class HomeFragment : Fragment() {
 
         binding.listGenre.adapter= genreAdapter
         viewModel.genres.observe(viewLifecycleOwner) {
+            MovieAdapter.VIEW_TYPE = if (it!!.isEmpty()) 1 else 2
             firstLoad()
         }
 

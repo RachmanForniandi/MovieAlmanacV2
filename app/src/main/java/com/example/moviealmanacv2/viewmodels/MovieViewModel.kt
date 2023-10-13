@@ -61,28 +61,28 @@ class MovieViewModel(
             }catch (e:Exception){
                 message.value="Terjadi Error data Movie"
             }
-
         }
     }
+
     val genresOption = listOf(
         Genres("","General"),
-        Genres("action", "Action"),
-        Genres("adventure", "Adventure"),
-        Genres("animation", "Animation"),
-        Genres("comedy", "Comedy"),
-        Genres("crime", "Crime"),
-        Genres("documentary", "Documentary"),
-        Genres("drama", "Drama"),
-        Genres("family", "Family"),
-        Genres("fantasy", "Fantasy"),
-        Genres("horror", "Horror"),
-        Genres("music", "Music"),
-        Genres("mystery", "Mystery"),
-        Genres("romance", "Romance"),
-        Genres("science fiction", "Science Fiction"),
-        Genres("tv movie", "TV Movie"),
-        Genres("thriller", "Thriller"),
-        Genres("war", "War"),
-        Genres("western", "Western"),
+        Genres("28", "Action"),
+        Genres("12", "Adventure"),
+        Genres("16", "Animation"),
+        Genres("35", "Comedy"),
+        Genres("80", "Crime"),
+        Genres("99", "Documentary"),
+        Genres("18", "Drama"),
+        Genres("10751", "Family"),
+        Genres("14", "Fantasy"),
+        Genres("27", "Horror"),
+        Genres("10402", "Music"),
+        Genres("9648", "Mystery"),
+        Genres("10749", "Romance"),
+        Genres("878", "Science Fiction"),
+        Genres("10770", "TV Movie"),
+        Genres("53", "Thriller"),
+        Genres("10752", "War"),
+        Genres("37", "Western"),
     )
 }

@@ -1,6 +1,7 @@
 package com.example.moviealmanacv2.repositories
 
 import com.example.moviealmanacv2.models.genres.Genres
+import com.example.moviealmanacv2.models.genres.ResponseGenres
 import com.example.moviealmanacv2.models.movies.Movies
 import com.example.moviealmanacv2.networkUtils.NetworkClients
 import com.example.moviealmanacv2.utils.ConstantsMain
@@ -13,6 +14,11 @@ val repositoryModule = module {
 class MoviesRepository (private val networkClients: NetworkClients){
 
 
+    suspend fun fetchGenre():ResponseGenres{
+        return networkClients.getGenre(
+            ConstantsMain.API_KEY
+        )
+    }
 
     suspend fun fetchDataDiscoverMovie(
         genre: String? = "",

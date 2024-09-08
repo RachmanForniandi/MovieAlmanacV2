@@ -22,4 +22,11 @@ interface NetworkClients {
         @Query("with_genres")genre:String,
         @Query("page")page:Int
     ):Movies
+
+    /*@GET("discover/movie")
+    suspend fun getDiscoverMovieByGenre(
+        @Query("api_key")api_key:String,
+        @Query("with_genres")genre:Int,
+        @Query("page")page:Int
+    ):Movies*/
 }

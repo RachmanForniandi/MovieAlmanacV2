@@ -31,5 +31,16 @@ class MoviesRepository (private val networkClients: NetworkClients){
         )
     }
 
+    /*suspend fun fetchDataDiscoverMovie(
+        genre: Int?,
+        page:Int
+    ):Movies{
+        return networkClients.getDiscoverMovieByGenre(
+            ConstantsMain.API_KEY,
+            genre!!,
+            page
+        )
+    }*/
+
 
 }

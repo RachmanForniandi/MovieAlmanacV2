@@ -31,6 +31,7 @@ class GenreAdapter(val genres:List<Genres>,
         holder.itemView.setOnClickListener {
             onClickListener.onClick(genre)
             setColor(holder.binding.txtGenre)
+
         }
         setColor(itemCategories[0])
     }
@@ -45,5 +46,6 @@ class GenreAdapter(val genres:List<Genres>,
             it.setBackgroundColor(R.color.white)
         }
         textView.setBackgroundColor(android.R.color.darker_gray)
+
     }
 }

@@ -53,7 +53,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginEnd="80dp"
             android:text="Of 10"
             android:textSize="24sp"
             android:textStyle="bold"
@@ -85,20 +85,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
+            android:layout_marginTop="8dp"
             android:text="Popularity"
-            android:textStyle="bold"
             android:textSize="24sp"
-            app:layout_constraintTop_toBottomOf="@id/ratingBar"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.343"
+            app:layout_constraintStart_toEndOf="@+id/imageView_poster"
+            app:layout_constraintTop_toBottomOf="@id/ratingBar" />
 
         <TextView
             android:id="@+id/txt_popularity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            tools:text="213.343747"
+            app:layout_constraintEnd_toEndOf="@+id/txt_lbl_popularity"
+            app:layout_constraintStart_toStartOf="@+id/txt_lbl_popularity"
             app:layout_constraintTop_toBottomOf="@id/txt_lbl_popularity"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            tools:text="213.343747" />
 
         <TextView
             android:id="@+id/txt_lbl_release"

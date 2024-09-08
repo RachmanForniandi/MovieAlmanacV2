@@ -1,0 +1,19 @@
+
+@
+app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
+u
+Eapp/src/main/java/com/example/moviealmanacv2/adapters/GenreAdapter.kt,4\1\419b8439a88b318f7a209ecd026e53cb90b16ce2
+t
+Dapp/src/main/java/com/example/moviealmanacv2/models/genres/Genres.kt,7\b\7b5287b37ac5f04176188cae9e2d0fafd6d52852
+u
+Eapp/src/main/java/com/example/moviealmanacv2/adapters/MovieAdapter.kt,7\d\7d01e6edd6af2378dbe16fb5d009f7364a29a8c2
+{
+Kapp/src/main/java/com/example/moviealmanacv2/networkUtils/NetworkClients.kt,d\3\d39d1ac6669e04ef565f1c785aaa1d9a368767be
+}
+Mapp/src/main/java/com/example/moviealmanacv2/repositories/MoviesRepository.kt,6\6\66481b04a62799087ee2115fda367c7f2b6bed03
+y
+Iapp/src/main/java/com/example/moviealmanacv2/viewmodels/MovieViewModel.kt,f\3\f3c41be4dd434d040209b2a6249368596e153bb9
+y
+Iapp/src/main/java/com/example/moviealmanacv2/ui/fragments/HomeFragment.kt,f\1\f1e6a03de24f72319f6b769138b037470e691ecf
+P
+ app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e

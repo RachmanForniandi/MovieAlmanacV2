@@ -23,16 +23,30 @@ class MovieViewModel(
     val loading by lazy { MutableLiveData<Boolean>() }
     val loadMore by lazy { MutableLiveData<Boolean>() }
     val genres by lazy { MutableLiveData<String>() }
+    //val genres by lazy { MutableLiveData<Int>() }
     val movies by lazy { MutableLiveData<Movies>() }
 
     init {
         genres.value=""
+        //genres.value=0
         message.value =null
     }
 
     var page=1
     var total =1
 
+    /*fun fetchGenre(){
+        loading.value = true
+        viewModelScope.launch {
+            try {
+                val responseGenre = moviesRepository.fetchGenre()
+                genres.value = responseGenre.genres[0].id
+
+            }catch (e: Exception){
+                message.value="Terjadi Error pada genre"
+            }
+        }
+    }*/
     /*fun fetchGenre(){
         loading.value = true
         viewModelScope.launch {
